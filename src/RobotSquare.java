@@ -7,24 +7,26 @@ public class RobotSquare {
  
     	// 1. Make a new Robot
 Robot r = new Robot();
-r.penDown();
-r.setSpeed(10);
-r.move(400);
+//r.penDown();
+//r.setSpeed(10);
+//r.move(400);
 
         // 3. Put the robot's pen down
-
+r.penDown();
 
         // 6. Make the robot move as fast as possible
-
+r.setSpeed(15);
 
         // 5. Do everything below here 4 times
+for (int i = 0; i < 4; i++) {
+	
 
 
         //         2. Move your robot 200 pixels
 
-
+r.move(200);
         //         4. Turn the robot 90 degrees to the right (90 degrees)
-
-
+r.turn(90);
+}
     }
 }
